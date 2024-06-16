@@ -54,3 +54,24 @@ footer sl-footer {
     padding: 1em;
     text-align: center;
 }
+
+sl-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+sl-menu-item {
+    list-style-type: none;
+}
+
+sl-menu-item a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+sl-menu-item a:hover {
+    background-color: #f0f0f0;
+}
