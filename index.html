@@ -6,7 +6,7 @@
     <meta name="description" content="A brief description of the page">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Muhammad Faks">
-    <title>mfaks.github.io</title>
+    <title>Muhammad Faks - Computer Science Student</title>
     <link rel="stylesheet" href="styles.css">    
     <link
       rel="stylesheet"
@@ -20,33 +20,36 @@
       onload="document.documentElement.classList.add('sl-theme-dark');"
     />
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+    <script src="theme.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>My name is Muhammad Faks</h1>
+        <h1>Muhammad Faks (he/him)</h1>
+        <p>MComputer Science Student, Oregon State University</p>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="current">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Email</a></li>
             </ul>
         </nav>
         <sl-switch id="theme-toggle" checked></sl-switch> <!-- Theme toggle switch -->
     </header>
 
     <main>
-        <section>
-            <h2>Main Content</h2>
-            <sl-button type="primary">Click Me</sl-button>
+        <section id="about">
+            <img src="faks-muhammad.jpg" alt="Muhammad Faks">
+            <h2>Hello there!</h2>
+            <p>My name is Muhammad Faks, and I am a fourth-year computer science student at Oregon State University. I am also a current member of the OSU Accelerated Master's Platform, which means I will graduate with my B.S. in Computer Science in June 2025 and complete my M.S. in Computer Science in 2026.</p>
+            <p>I am passionate about using data to tell impactful stories and drive change. I excel in analytical problem-solving, technical ability, and leadership. I enjoy thriving in collaborative, innovative projects at the intersection of technology and real-world applications.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Muhammad Faks.</p>
     </footer>
-
-    <script src="theme.js"></script>
-    <script src="main.js"></script>
 </body>
 </html>
