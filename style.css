@@ -84,3 +84,33 @@ sl-menu-item a:hover {
     background-color: #f0f0f0;
     z-index: 1000;
 }
+
+/* Example styles for portrait positioning */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing between text and image */
+}
+
+.portrait {
+    width: 200px; /* Adjust width as needed */
+    flex-shrink: 0; /* Prevent portrait from shrinking */
+    margin-top: 20px; /* Adjust top margin */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .portrait {
+        width: 100%; /* Portrait takes full width on smaller screens */
+        margin-top: 0;
+        margin-bottom: 20px; /* Add bottom margin on smaller screens */
+    }
+}
