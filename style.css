@@ -5,12 +5,16 @@ body {
     padding: 0;
 }
 
-header .card, main .card, footer .footer {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #f0f0f0;
     padding: 1em;
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
+}
+
+.header-left h1, .header-left p {
+    margin: 0;
 }
 
 header h1 {
@@ -22,12 +26,7 @@ header p {
 }
 
 nav.top-right-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color: #f0f0f0;
-    padding: 1em;
-    z-index: 1000;
 }
 
 nav ul {
@@ -63,6 +62,7 @@ section {
 .about-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
 }
 
