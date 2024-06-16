@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-orange {
+    color: #ff5800;
+}
+.bg-orange {
+    background-color: #ff5800;
+}
+.text-orange:hover {
+    color: #e64a19;
+}
