@@ -5,12 +5,12 @@ body {
     padding: 0;
 }
 
-header sl-card {
-    background: var(--sl-color-primary-50);
+header .card, main .card, footer .footer {
+    background: #f0f0f0;
     padding: 1em;
     text-align: center;
     margin-bottom: 20px;
-    position: relative; /* Ensure the sl-card is relative for absolute positioning */
+    position: relative;
 }
 
 header h1 {
@@ -34,7 +34,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Display list items horizontally */
+    display: flex;
 }
 
 nav ul li {
@@ -43,14 +43,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--sl-color-primary-700);
+    color: #333;
 }
 
 nav ul li a.current {
     font-weight: bold;
 }
 
-main sl-card {
+main .card {
     padding: 20px;
     margin: 0 auto;
     max-width: 800px;
@@ -60,13 +60,6 @@ section {
     margin-bottom: 20px;
 }
 
-footer sl-footer {
-    background: var(--sl-color-primary-50);
-    padding: 1em;
-    text-align: center;
-}
-
-/* Example styles for portrait positioning */
 .about-content {
     display: flex;
     flex-direction: row;
@@ -75,13 +68,18 @@ footer sl-footer {
 
 .about-text {
     flex: 1;
-    padding-right: 20px; /* Adjust spacing between text and image */
+    padding-right: 20px;
 }
 
 .portrait {
-    width: 200px; /* Adjust width as needed */
-    flex-shrink: 0; /* Prevent portrait from shrinking */
-    margin-top: 20px; /* Adjust top margin */
+    width: 200px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.portrait .avatar {
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
@@ -90,8 +88,8 @@ footer sl-footer {
     }
 
     .portrait {
-        width: 100%; /* Portrait takes full width on smaller screens */
+        width: 100%;
         margin-top: 0;
-        margin-bottom: 20px; /* Add bottom margin on smaller screens */
+        margin-bottom: 20px;
     }
 }
